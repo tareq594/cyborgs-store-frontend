@@ -3,9 +3,9 @@ module.exports = {
 	// store UI language
 	language: process.env.LANGUAGE || 'en',
 	// used by Store (server side)
-	ajaxBaseUrl: process.env.AJAX_BASE_URL || 'http://localhost:3001/ajax',
+	ajaxBaseUrl: process.env.AJAX_BASE_URL || 'https://api.demo.store.cyborgstech.com/ajax',
 	// used by Store (server side)
-	apiBaseUrl: process.env.API_BASE_URL || 'http://localhost:3001/api/v1',
+	apiBaseUrl: process.env.API_BASE_URL || 'https://api.demo.store.cyborgstech.com/api/v1',
 
 	storeListenPort: process.env.STORE_PORT || 3000,
 
