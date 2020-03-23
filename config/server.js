@@ -10,8 +10,8 @@ module.exports = {
 	storeListenPort: process.env.STORE_PORT || 3000,
 
 	// key to sign tokens
-	jwtSecretKey: process.env.JWT_SECRET_KEY || '-',
+	jwtSecretKey: process.env.JWT_SECRET_KEY || '@MeenZaidTareq',
 
 	// key to sign store cookies
-	cookieSecretKey: process.env.COOKIE_SECRET_KEY || '-'
+	cookieSecretKey: process.env.COOKIE_SECRET_KEY || '@MeenZaidTareq'
 };
