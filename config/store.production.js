@@ -1,7 +1,7 @@
 // config used by store client side only
 module.exports = {
 	// store UI language
-	language: process.env.LANGUAGE || 'de',
+	language: process.env.LANGUAGE || 'ar',
 
 	// used by Store (server side)
 	apiBaseUrl: process.env.API_BASE_URL || 'https://api.demo.store.cyborgstech.com/api/v1',
