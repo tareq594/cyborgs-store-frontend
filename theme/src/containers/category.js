@@ -27,6 +27,7 @@ const getFilterPriceSummary = (productFilter, settings) => {
 	let priceSummary = '';
 	if (productFilter.priceFrom > 0 && productFilter.priceTo > 0) {
 		const priceFrom = helper.formatCurrency(productFilter.priceFrom, settings);
+		console.log(priceFrom)
 		const priceTo = helper.formatCurrency(productFilter.priceTo, settings);
 		priceSummary = `. ${text.price}: ${priceFrom} - ${priceTo}`;
 	}
