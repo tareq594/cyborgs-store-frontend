@@ -30,11 +30,11 @@ export const getProductFilterForCategory = (locationSearch, sortBy) => {
 	}
 	var from = parseFloat(queryFilter.price_from);
 	if (from > 0) {
-		from -= 0.02;
+		from -= 0.01;
 	}
 	var to = parseFloat(queryFilter.price_to);
 	if (to > 0) {
-		to -= 0.02;
+		to += 0.01;
 	}
 
 	return {
