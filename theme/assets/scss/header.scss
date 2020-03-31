@@ -101,6 +101,10 @@ DESKTOP
 .primary-nav .nav-level-0 a {
 	color: white;
 }
+.primary-nav .nav-level-0 li.is-active a{
+	color: #000;
+}
+
 .primary-nav li {
 	display: inline-block;
 	padding: 0.5rem 1.25rem;
