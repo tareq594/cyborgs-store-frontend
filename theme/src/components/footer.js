@@ -96,7 +96,7 @@ export default class Footer extends React.PureComponent {
 			<section className="section section-footer">
 				<hr />
 				<footer>
-					<div className="container" style={{ backgroundColor: 'black' }}>
+					<div className="container">
 						<div className="content">
 							<div className="columns is-gapless">
 								<div className="column is-5">
