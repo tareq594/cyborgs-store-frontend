@@ -48,6 +48,7 @@ export default class PriceSlider extends React.Component {
 					disabled={maxPrice === 0}
 					className="price-filter-range"
 					onAfterChange={values => {
+						console.log(values)
 						setPriceFromAndTo(...values);
 					}}
 					onChange={this.setValues}
