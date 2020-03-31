@@ -43,12 +43,11 @@ export default class PriceSlider extends React.Component {
 				<Range
 					min={minPrice}
 					max={maxPrice}
-					step={(this.state.maxValue-this.state.minValue)/20}
+					step={(this.state.maxValue - this.state.minValue) / 20}
 					value={[this.state.minValue, this.state.maxValue]}
 					disabled={maxPrice === 0}
 					className="price-filter-range"
 					onAfterChange={values => {
-						console.log(values)
 						setPriceFromAndTo(...values);
 					}}
 					onChange={this.setValues}
