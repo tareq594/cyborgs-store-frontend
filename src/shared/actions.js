@@ -28,9 +28,18 @@ export const getProductFilterForCategory = (locationSearch, sortBy) => {
 			attributes[querykey] = queryFilter[querykey];
 		}
 	}
+	var from = parseFloat(queryFilter.price_from);
+	if (from > 0) {
+		from -= 0.01;
+	}
+	var to = parseFloat(queryFilter.price_to);
+	if (to > 0) {
+		to -= 0.01;
+	}
+
 	return {
-		priceFrom: parseFloat(queryFilter.price_from || 0) - 0.01,
-		priceTo: parseFloat(queryFilter.price_to || 0) + 0.01,
+		priceFrom: parseFloat(from || 0),
+		priceTo: parseFloat(to || 0),
 		attributes,
 		search: null,
 		sort: sortBy
