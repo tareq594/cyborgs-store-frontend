@@ -32,8 +32,8 @@ export const getProductFilterForCategory = (locationSearch, sortBy) => {
 	console.log(queryFilter.price_from)
 	console.log("-------")
 	return {
-		priceFrom: parseInt(queryFilter.price_from || 0),
-		priceTo: parseInt(queryFilter.price_to || 0),
+		priceFrom: parseFloat(queryFilter.price_from || 0),
+		priceTo: parseFloat(queryFilter.price_to || 0),
 		attributes,
 		search: null,
 		sort: sortBy
