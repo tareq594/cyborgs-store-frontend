@@ -91,6 +91,10 @@ export default class Disqus extends React.PureComponent {
 	}
 
 	render() {
-		return <div id="disqus_thread" />;
+		return;
+		<div>
+			<p>disquis</p>
+			<div id="disqus_thread" />
+		</div>;
 	}
 }
