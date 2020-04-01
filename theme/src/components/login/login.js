@@ -167,9 +167,9 @@ class Login extends React.Component {
 							</div>
 						</div>
 					)}
-				<br />
+				{/* <br />
 				<h2 className={titleClassName}>{text.or}</h2>
-				<br />
+				<br /> */}
 				<form onSubmit={handleSubmit} className={loginForm}>
 					<div className="login-section">
 						<h2 className={titleClassName}>{text.login_title}</h2>
