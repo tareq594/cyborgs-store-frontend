@@ -155,18 +155,21 @@ class Login extends React.Component {
 							<div className={loginSectionGuest}>
 								<h2>{text.continue_guest_headline}</h2>
 								<p>{text.continue_guest_text}</p>
-						      <div className="login-button-wrap">
-								<NavLink
-									className="button loginButtonClass"
-									style={{ textTransform: 'uppercase' }}
-									to="/checkout"
-								>
-									{text.proceedToCheckout}
-								</NavLink>
-						      </div>
+								<div className="login-button-wrap">
+									<NavLink
+										className="button loginButtonClass"
+										style={{ textTransform: 'uppercase' }}
+										to="/checkout"
+									>
+										{text.proceedToCheckout}
+									</NavLink>
+								</div>
 							</div>
 						</div>
-					)}			
+					)}
+				<br />
+				<h2 className={titleClassName}>{text.or}</h2>
+				<br />
 				<form onSubmit={handleSubmit} className={loginForm}>
 					<div className="login-section">
 						<h2 className={titleClassName}>{text.login_title}</h2>
@@ -210,7 +213,7 @@ class Login extends React.Component {
 							</button>
 						</div>
 
-						<NavLink className="logo-image" to="/register">
+						{/* <NavLink className="logo-image" to="/register">
 							<div className="login-button-wrap">
 								<button
 									type="button"
@@ -220,7 +223,7 @@ class Login extends React.Component {
 									{text.register}
 								</button>
 							</div>
-						</NavLink>
+						</NavLink> */}
 					</div>
 				</form>
 			</div>

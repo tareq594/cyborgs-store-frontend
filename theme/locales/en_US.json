@@ -98,6 +98,7 @@
   "login": "Log In",
   "register": "Register",
   "login_title": "Log In",
+  "or":"Or",
   "register_title": "Register",
   "login_success": "You are logged in successfully.",
   "login_failed": "The email or password is wrong. Please try again.",
